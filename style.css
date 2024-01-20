@@ -1,0 +1,159 @@
+/* Global Styles */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 0 10px;
+    background:rgb(203, 201, 201);
+}
+::selection {
+    color: #fff;
+    background: #9200b0;
+}
+
+/* Wrapper Styles */
+.wrapper {
+    width: 370px;
+    padding: 30px;
+    border: 0.5px solid black;
+    border-style: solid;
+    border-radius: 5px;
+    background: #fff;
+    box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.05);
+}
+.wrapper header {
+    font-size: 28px;
+    font-weight: 500;
+    text-align: center;
+}
+.wrapper form {
+    margin: 40px 0 20px 0;
+}
+
+/* Form Element Styles */
+form :where(input, select, button) {
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+}
+form p {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+form input {
+    height: 50px;
+    font-size: 17px;
+    padding: 0 15px;
+    border: 1px solid #999;
+}
+form input:focus {
+    padding: 0 14px;
+    border: 2px solid #675AFE;
+}
+form .exchange-rate {
+    font-size: 25px;
+    margin: 20px 0 30px;
+    text-align: center;
+    border: 4px dotted #9200b0;
+    border-radius: 5px;
+}
+form button {
+    height: 52px;
+    width: 300px;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    background: #9200b0;
+    transition: 0.3s ease;
+}
+form button:hover {
+    background: #b501da;
+}
+
+/* Drop List Styles */
+.drop-list {
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+.drop-list .select-box {
+    display: flex;
+    width: 115px;
+    height: 45px;
+    align-items: center;
+    border-radius: 5px;
+    justify-content: center;
+    border: 1px solid #999;
+}
+.drop-list .icon {
+    cursor: pointer;
+    margin-top: 30px;
+    font-size: 22px;
+}
+.select-box img {
+    max-width: 21px;
+}
+.select-box select {
+    width: auto;
+    font-size: 16px;
+    background: none;
+    margin: 0 -5px 0 5px;
+}
+
+/* Calculator Styles */
+.calculator {
+    display: grid;
+    grid-template-columns: repeat(4, 75px); /* Four columns, each 75px wide */
+    gap: 10px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid #2c3e50;
+    width: auto; /* Width adjusts based on content */
+}
+.calculator header {
+    font-size: 28px;
+    font-weight: 500;
+    text-align: center;
+}
+.display-section {
+    grid-column: 1/-1; /* Display section spans all columns */
+    display: flex;
+    justify-content: space-between;
+}
+#display {
+    flex-grow: 1;
+    margin-right: 10px;
+    height: 50px;
+    text-align: right;
+    border: 0.5px solid black;
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    padding-right: 10px;
+    font-size: 20px;
+}
+button {
+    width: 75px;
+    height: 71px;
+    background-color: #9200b0;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 25px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+button:hover {
+    background-color: #b501da;
+}
